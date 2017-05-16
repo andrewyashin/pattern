@@ -9,6 +9,12 @@ public class BlackCircle implements Circle {
         this.radius = radius;
     }
 
+    //TODO: #1 Draw shape with * or only print type of shape and it Color
+    @Override
+    public String draw() {
+        return null;
+    }
+
     @Override
     public double getPerimetr() {
         return Math.PI * 2 * radius;
