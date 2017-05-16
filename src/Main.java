@@ -11,5 +11,7 @@ public class Main {
         baseFactory = AbstractFactory.getFactory(Color.BLACK);
         System.out.println(baseFactory.createCircle(5));
         System.out.println(baseFactory.createTriangle());
+
+
     }
 }
