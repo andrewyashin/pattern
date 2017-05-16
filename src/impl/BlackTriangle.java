@@ -1,4 +1,6 @@
 package impl;
 
-public class BlackTriangle {
+import shape.Triangle;
+
+public class BlackTriangle implements Triangle {
 }

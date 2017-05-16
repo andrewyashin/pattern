@@ -1,18 +1,18 @@
 package factories;
 
-import impl.WhiteCircle;
-import impl.WhiteTriangle;
+import impl.BlackCircle;
+import impl.BlackTriangle;
 import shape.Circle;
 import shape.Triangle;
 
-public class WhiteFactory implements BaseFactory {
+public class BlackFactory implements BaseFactory {
     @Override
     public Circle createCircle() {
-        return new WhiteCircle();
+        return new BlackCircle();
     }
 
     @Override
     public Triangle createTriangle() {
-        return new WhiteTriangle();
+        return new BlackTriangle();
     }
 }
