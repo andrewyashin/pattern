@@ -24,4 +24,9 @@ public class RedTriangle implements Triangle {
         double p = getPerimetr() / 2;
         return Math.sqrt(p * (p - a) * (p - b) * (p - c));
     }
+
+    @Override
+    public String draw() {
+        return null;
+    }
 }

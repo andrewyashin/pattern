@@ -2,5 +2,6 @@ package ecolor;
 
 public enum Color {
     WHITE,
-    BLACK
+    BLACK,
+    RED
 }
