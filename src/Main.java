@@ -1,14 +1,14 @@
+import ecolor.Color;
 import factories.AbstractFactory;
 import factories.BaseFactory;
-import factories.WhiteFactory;
 
 public class Main {
     public static void main(String[] args) {
-        BaseFactory baseFactory = AbstractFactory.getFactory("white");
+        BaseFactory baseFactory = AbstractFactory.getFactory(Color.WHITE);
         System.out.println(baseFactory.createCircle());
         System.out.println(baseFactory.createTriangle());
 
-        baseFactory = AbstractFactory.getFactory("black");
+        baseFactory = AbstractFactory.getFactory(Color.BLACK);
         System.out.println(baseFactory.createCircle());
         System.out.println(baseFactory.createTriangle());
     }
