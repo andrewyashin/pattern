@@ -7,8 +7,8 @@ import shape.Triangle;
 
 public class WhiteFactory implements BaseFactory {
     @Override
-    public Circle createCircle() {
-        return new WhiteCircle();
+    public Circle createCircle(double radius) {
+        return new WhiteCircle(radius);
     }
 
     @Override

@@ -4,6 +4,6 @@ import shape.Circle;
 import shape.Triangle;
 
 public interface BaseFactory {
-    Circle createCircle();
+    Circle createCircle(double radius);
     Triangle createTriangle();
 }
