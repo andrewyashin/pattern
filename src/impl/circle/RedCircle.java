@@ -1,4 +1,4 @@
-package impl;
+package impl.circle;
 
 import shape.Circle;
 public class RedCircle implements Circle {

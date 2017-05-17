@@ -1,6 +1,8 @@
 package factories;
 
-import impl.*;
+import impl.circle.RedCircle;
+import impl.rectangle.RedRectangle;
+import impl.triangle.RedTriangle;
 import shape.*;
 
 public class RedFactory implements BaseFactory {

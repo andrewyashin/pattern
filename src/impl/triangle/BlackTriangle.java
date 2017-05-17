@@ -1,4 +1,4 @@
-package impl;
+package impl.triangle;
 
 import shape.Triangle;
 

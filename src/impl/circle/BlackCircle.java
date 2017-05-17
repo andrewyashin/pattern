@@ -1,12 +1,18 @@
-package impl;
+package impl.circle;
 
 import shape.Circle;
 
-public class WhiteCircle implements Circle {
+public class BlackCircle implements Circle {
     double radius;
 
-    public WhiteCircle(double radius) {
+    public BlackCircle(double radius) {
         this.radius = radius;
+    }
+
+    //TODO: #1 Draw shape with * or only print type of shape and it Color
+    @Override
+    public String draw() {
+        return null;
     }
 
     @Override
@@ -17,11 +23,5 @@ public class WhiteCircle implements Circle {
     @Override
     public double getSquare() {
         return Math.PI * radius * radius;
-    }
-
-    //TODO: Draw shape with * or only print type of shape and it Color
-    @Override
-    public String draw() {
-        return null;
     }
 }

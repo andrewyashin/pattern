@@ -1,4 +1,4 @@
-package impl;
+package impl.rectangle;
 
 import shape.Rectangle;
 

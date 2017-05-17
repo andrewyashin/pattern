@@ -1,8 +1,8 @@
 package factories;
 
-import impl.BlackCircle;
-import impl.BlackRectangle;
-import impl.BlackTriangle;
+import impl.circle.BlackCircle;
+import impl.rectangle.BlackRectangle;
+import impl.triangle.BlackTriangle;
 import shape.Circle;
 import shape.Rectangle;
 import shape.Triangle;

@@ -1,22 +1,21 @@
-package impl;
+package impl.triangle;
 
 import shape.Triangle;
 
-public class RedTriangle implements Triangle {
-    private double a;
-    private double b;
-    private double c;
+public class WhiteTriangle implements Triangle {
 
+    private double a,b,c;
 
-    public RedTriangle(double a, double b, double c) {
+    public WhiteTriangle(double a, double b, double c) {
         this.a = a;
         this.b = b;
         this.c = c;
     }
 
+
     @Override
     public double getPerimeter() {
-        return a + b + c;
+        return a+b+c;
     }
 
     @Override
@@ -25,6 +24,7 @@ public class RedTriangle implements Triangle {
         return Math.sqrt(p * (p - a) * (p - b) * (p - c));
     }
 
+    //TODO: #9 Draw shape with * or only print type of shape and it Color
     @Override
     public String draw() {
         return null;
