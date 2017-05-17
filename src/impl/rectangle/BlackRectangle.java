@@ -22,4 +22,16 @@ public class BlackRectangle implements Rectangle {
     public double getSquare() {
         return a*b;
     }
+
+    @Override
+    public String draw() {
+        String s="";
+        for(int i=0;i<a;i++){
+            for(int j=0;j<b;j++){
+                s+="*";
+            }
+            s+="\n";
+        }
+        return s;
+    }
 }
