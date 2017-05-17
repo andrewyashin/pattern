@@ -19,7 +19,6 @@ public class WhiteCircle implements Circle {
         return Math.PI * radius * radius;
     }
 
-    //TODO: Draw shape with * or only print type of shape and it Color
     @Override
     public String draw() {
         int radiusIntValue = (int) this.radius;

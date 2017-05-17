@@ -3,6 +3,7 @@ import factories.AbstractFactory;
 import factories.BaseFactory;
 import shape.Circle;
 import shape.Rectangle;
+import shape.Triangle;
 
 
 //TODO: #12 add some new factories and shapes
@@ -11,29 +12,41 @@ import shape.Rectangle;
 public class Main {
     public static void main(String[] args) {
         BaseFactory baseFactory = AbstractFactory.getFactory(Color.WHITE);
-
-        Circle circle = baseFactory.createCircle(5);
-        System.out.println(circle.getPerimeter());
-        System.out.println(circle.getSquare());
-        System.out.println(circle.draw());
-        System.out.println(circle);
-
-
-        System.out.println(baseFactory.createTriangle(3,4,5));
+        printCircle(baseFactory.createCircle(5));
+        printRectangle(baseFactory.createRectangle(1,2));
+        printTriangle(baseFactory.createTriangle(1,1,1));
 
         baseFactory = AbstractFactory.getFactory(Color.BLACK);
-        System.out.println(baseFactory.createCircle(5));
-        System.out.println(baseFactory.createTriangle(3,4,5));
+        printCircle(baseFactory.createCircle(5));
+        printRectangle(baseFactory.createRectangle(1,2));
+        printTriangle(baseFactory.createTriangle(1,1,1));
+
+        baseFactory = AbstractFactory.getFactory(Color.RED);
+        printCircle(baseFactory.createCircle(5));
+        printRectangle(baseFactory.createRectangle(1,2));
+        printTriangle(baseFactory.createTriangle(1,1,1));
 
 
+    }
 
+    static void printCircle(Circle shape){
+        System.out.println(shape.getPerimeter());
+        System.out.println(shape.getSquare());
+        System.out.println(shape.draw());
+        System.out.println(shape);
+    }
 
-        Rectangle rectangle = baseFactory.createRectangle(5,4);
-        System.out.println(rectangle.getPerimeter());
-        System.out.println(rectangle.getSquare());
-        System.out.println(rectangle.draw());
-        System.out.println(rectangle);
+    static void printRectangle(Rectangle shape){
+        System.out.println(shape.getPerimeter());
+        System.out.println(shape.getSquare());
+        System.out.println(shape.draw());
+        System.out.println(shape);
+    }
 
-
+    static void printTriangle(Triangle shape){
+        System.out.println(shape.getPerimeter());
+        System.out.println(shape.getSquare());
+        System.out.println(shape.draw());
+        System.out.println(shape);
     }
 }
