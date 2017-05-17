@@ -16,7 +16,7 @@ public class BlackCircle implements Circle {
     }
 
     @Override
-    public double getPerimetr() {
+    public double getPerimeter() {
         return Math.PI * 2 * radius;
     }
 

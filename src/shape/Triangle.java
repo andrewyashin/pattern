@@ -1,8 +1,8 @@
 package shape;
 
-//TODO: #11 Rename method 'getPerimetr'. Dont like word Perimetr
+//TODO: #11 Rename method 'getPerimeter'. Dont like word Perimetr
 public interface Triangle {
-    double getPerimetr();
+    double getPerimeter();
     double getSquare();
     String draw();
 }

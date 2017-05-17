@@ -8,9 +8,9 @@ public class AbstractFactory {
         if (color.equals(Color.WHITE)) {
             return new WhiteFactory();
         } else if (color.equals(Color.RED)) {
-            return new RedFactory();
-        } else {
+            return new RedFactory();      
+        } else if(color.equals(Color.BLACK)){
             return new BlackFactory();
-        }
+        } else return new RedFactory();
     }
 }

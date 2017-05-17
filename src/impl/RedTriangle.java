@@ -15,13 +15,13 @@ public class RedTriangle implements Triangle {
     }
 
     @Override
-    public double getPerimetr() {
+    public double getPerimeter() {
         return a + b + c;
     }
 
     @Override
     public double getSquare() {
-        double p = getPerimetr() / 2;
+        double p = getPerimeter() / 2;
         return Math.sqrt(p * (p - a) * (p - b) * (p - c));
     }
 
