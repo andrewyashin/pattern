@@ -31,6 +31,7 @@ public class Main {
         Rectangle rectangle = baseFactory.createRectangle(5,4);
         System.out.println(rectangle.getPerimeter());
         System.out.println(rectangle.getSquare());
+        System.out.println(rectangle.draw());
         System.out.println(rectangle);
 
 
