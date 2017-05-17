@@ -3,18 +3,26 @@ package impl;
 import shape.Triangle;
 
 public class BlackTriangle implements Triangle {
+    private double a,b,c;
 
-    //TODO: #2 Make constructor with 3 parameters
-    //TODO: #5 return Perimetr
-    @Override
-    public double getPerimetr() {
-        return 0;
+    public BlackTriangle(double a, double b, double c) {
+        this.a = a;
+        this.b = b;
+        this.c = c;
     }
 
-    //TODO: #3 return Square
+
+
+
+    @Override
+    public double getPerimeter() {
+        return a+b+c;
+    }
+
     @Override
     public double getSquare() {
-        return 0;
+        double p = getPerimeter() / 2;
+        return Math.sqrt(p * (p - a) * (p - b) * (p - c));
     }
 
     //TODO: #4 Draw shape with * or only print type of shape and it Color

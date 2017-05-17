@@ -1,8 +1,10 @@
 package factories;
 
 import impl.BlackCircle;
+import impl.BlackRectangle;
 import impl.BlackTriangle;
 import shape.Circle;
+import shape.Rectangle;
 import shape.Triangle;
 
 public class BlackFactory implements BaseFactory {
@@ -12,7 +14,12 @@ public class BlackFactory implements BaseFactory {
     }
 
     @Override
-    public Triangle createTriangle() {
-        return new BlackTriangle();
+    public Triangle createTriangle(double a, double b, double c) {
+        return new BlackTriangle(a,b,c);
+    }
+
+    @Override
+    public Rectangle createRectangle(double a, double b) {
+        return new BlackRectangle(a,b);
     }
 }
